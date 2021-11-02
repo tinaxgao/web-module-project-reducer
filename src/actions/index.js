@@ -3,6 +3,8 @@ export const APPLY_NUMBER = "APPLY_NUMBER";
 export const CHANGE_OPERATION = "CHANGE_OPERATION";
 export const CLEAR_DISPLAY = "CLEAR_DISPLAY";
 export const ADD_MEMORY = "ADD_MEMORY";
+export const MEM_RECALL = "MEM_RECALL";
+export const MEM_CLEAR = "MEM_CLEAR";
 
 export const addOne = () => {
     return({type:ADD_ONE});
@@ -22,4 +24,12 @@ export const clearDisplay = () => {
 
 export const addMemory = () => {
     return({type:ADD_MEMORY})
+}
+
+export const memRecall = () => {
+    return({type:MEM_RECALL})
+}
+
+export const memClear =() => {
+    return({type:MEM_CLEAR})
 }
